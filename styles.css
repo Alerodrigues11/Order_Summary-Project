@@ -1,0 +1,238 @@
+:root {
+    --Page-blue: hsl(225, 100%, 94%);
+    --Bright-blue: hsl(245, 75%, 52%);
+    --Very-pale-blue: hsl(225, 100%, 98%);
+    --Desaturated-blue: hsl(224, 23%, 55%);
+    --Dark-blue: hsl(223, 47%, 23%);
+}
+
+*{
+    margin: 0;
+    padding: 0;
+
+    font-family: 'Red Hat Display', sans-serif;
+    font-size: 16px;
+}
+
+body {
+    min-height: 100vh;
+    background-image: url(./images/pattern-background-mobile.svg);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-color: hsl(225, 100%, 94%);
+    
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.attribution {
+    margin-top: 12px;
+    font-size: 12px;
+}
+
+.attribution__style {
+    font-size: 12px;
+}
+
+
+/* Centralization */
+
+.container__main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container__first {
+    max-width: 330px;
+    margin: 3em 0;
+}
+
+.container__img {
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    
+    max-width: 330px;
+}
+
+.borda {
+    margin-top: -4.5px;
+    max-width: 450px;
+    background-color: white;
+
+    border: 1px solid white;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+}
+
+/* Formating words */
+
+.container__box {
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    
+    text-align: center;
+}
+
+.container__title {
+    margin-top: 1.25em;
+    margin-bottom: 0.5em;
+
+    font-size: 1.5rem;
+    font-weight: 900;
+    color: var(--Dark-blue);
+}
+
+.container__text {
+    margin: 1em 2em;
+    color: var(--Desaturated-blue);
+    font-weight: 500;
+    line-height: 1.5em;
+}
+
+/* Customizing second part */
+
+.container__box--second {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 1px;
+    justify-items: center;
+    text-align: center;
+    align-items: center;
+
+    margin: 1em 1em;
+    padding: 1em;
+    
+    box-sizing: border-box;
+    border: 8px solid var(--Very-pale-blue);
+    border-radius: 15px;
+    background: var(--Very-pale-blue);
+}
+
+.container__box--second a:hover {
+    text-decoration: none;
+    color: #766CF1;
+}
+
+.container__value--plan {
+    display: flex;
+    flex-direction: column;
+
+    justify-self: start;
+    padding-right: 2em;
+    gap: 2px;
+}
+
+.container__value--plan h3 {
+    font-weight: 900;
+    color: var(--Dark-blue);
+}
+
+.container__value--plan p {
+    color: var(--Desaturated-blue);
+}
+
+.img__music {
+    margin-right: 15px;
+}
+
+/* Payment Model or Cancel Order */ 
+
+.container__box--third{
+    align-items: center;
+
+    margin: 1.75em 1.5em;
+    
+}
+
+.payment {
+    text-decoration: none;
+    display: block;
+    border-radius: 10px;
+    background: var(--Bright-blue);
+    color: var(--Very-pale-blue);
+    text-align: center;
+
+    padding: 0.75em 0;
+    margin-top: 1em;
+    margin-bottom: 2em;
+}
+
+.container__box--third a:hover {
+    background-color: #766CF1;
+}
+
+.container__box--fourth {
+    align-items: center;
+
+    margin: 1.75em 1.5em;
+    
+}
+
+.cancel {
+    text-decoration: none;
+    display: block;
+    text-align: center;
+    margin-bottom: 2.5em;
+    color: var(--Desaturated-blue);
+}
+
+.container__box--fourth a:hover {
+    color: black;
+}
+
+
+
+/* Responsiveness */
+
+@media screen and (min-width: 780px) {
+    body{
+        background-image: url(./images/pattern-background-desktop.svg);
+    }
+
+    .container__first {
+        max-width: 430px;
+    }
+    
+    .container__img {
+        max-width: 430px;
+    }
+
+    .container__box--second{
+        padding: 1em 0;
+        margin: 1em 3.25em;
+        gap: 3px;
+
+    }
+
+    .img__music {
+        margin-right: 0px;
+    }
+
+    .container__value--plan {
+        padding-right: 4em;
+        
+    }
+
+    .container__box--third {
+        margin: 1.5em 3.25em;
+        
+    }
+
+    .container__text {
+        margin: 0em 3em;
+    }
+
+    .attribution {
+        font-size: 15px;
+    }
+
+    .attribution__style {
+        font-size: 15px;
+    }
+
+}
+
