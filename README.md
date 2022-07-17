@@ -1,5 +1,5 @@
 <h2 align="center"> 
-  Projeto de um Order Sumarry responsivo feito com HTML e CSS Grid
+  Projeto de um Order Summary responsivo feito com HTML e CSS Grid
 </h2>
 
 | Layout Desktop  |  Layout Mobile  |
