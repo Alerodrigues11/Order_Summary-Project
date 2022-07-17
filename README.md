@@ -1,6 +1,10 @@
 <h2 align="center"> 
-  Projeto de um Order Summary responsivo feito com HTML e CSS Grid
+  Order Summary responsive project using HTML and CSS Grid (EN)
 </h2>
+
+<p align="center">
+  Projeto de um Order Summary responsivo feito com HTML e CSS Grid (PT-BR)
+</p>
 
 | Layout Desktop  |  Layout Mobile  |
 | --------------- | --------------- |
